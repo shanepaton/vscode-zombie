@@ -1,0 +1,35 @@
+{
+    "name": "zombie",
+    "publisher": "ShanePaton",
+    "author": {
+        "name": "Shane Paton"
+    },
+    "license": "MIT",
+    "displayName": "ZOMBIE",
+    "description": "Add's syntax highlighting for ZOMBIE",
+    "icon": "images/zombieLang.png",
+    "version": "0.0.5",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/shanepaton/vscode-zombie"
+    },
+    "engines": {
+        "vscode": "^1.56.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "zombie",
+            "aliases": ["ZOMBIE", "zombie"],
+            "extensions": [".z"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "zombie",
+            "scopeName": "source.z",
+            "path": "./syntaxes/zombie.tmLanguage.json"
+        }]
+    }
+}
